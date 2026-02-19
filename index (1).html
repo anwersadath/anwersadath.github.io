@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anwer Sadath</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #2d6a4f;
+      --accent-light: #d8f3dc;
+      --border: #e0dbd0;
+      --link: #2d6a4f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.75;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 28px 100px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .subline {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+      border-left: 2px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: var(--accent-light);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.2s;
+    }
+
+    a:hover {
+      text-decoration-color: var(--accent);
+    }
+
+    .projects-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .projects-link:hover {
+      background: #b7e4c7;
+      text-decoration: none;
+    }
+
+    .find-me ul li {
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Anwer Sadath</h1>
+  <p class="tagline">// MCA</p>
+  <p class="subline">just a cs student who likes building things with data.</p>
+
+  <hr class="divider"/>
+
+  <section>
+    <h2>about</h2>
+    <ul>
+      <li>building with python, sql, and power bi.</li>
+      <li>love getting into ml stuff. occasionally get stuck on some stupid bug.</li>
+      <li>still figuring things out.</li>
+    </ul>
+  </section>
+
+  <hr class="divider"/>
+
+  <section>
+    <h2>projects</h2>
+    <p style="color: var(--muted); font-size: 0.93rem;">all my work lives on github — some finished, some abandoned, all honest.</p>
+    <br/>
+    <a class="projects-link" href="https://github.com/your-username" target="_blank">→ see everything on github</a>
+  </section>
+
+  <hr class="divider"/>
+
+  <section class="find-me">
+    <h2>find me</h2>
+    <ul>
+      <li><a href="https://github.com/anwersadath" target="_blank">GitHub</a> — experiments and unfinished ambitions</li>
+      <li><a href="https://linkedin.com/in/anwer-sadath" target="_blank">LinkedIn</a> — where i sound more professional</li>
+      <li><a href="mailto:anweradk@gmail.com">Email</a> — i reply. mostly.</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    <p>nothing more.</p>
+  </div>
+
+</body>
+</html>
